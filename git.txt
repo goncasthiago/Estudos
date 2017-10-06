@@ -1,0 +1,12 @@
+# git init
+
+Inicia um repositorio, cria a pasta .git/, pasta essa utilizada pelo git para gerar o versionamento dos arquivos
+
+# git add
+
+Comando utilizado para incluir arquivos no controle do git, escreve git add e depois o nome do arquivos
+
+# git status
+
+Mostra como está o status do git, quais os arquivos que ele está controlando a versao e quais arquivos não
+
