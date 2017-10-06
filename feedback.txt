@@ -1,0 +1,11 @@
+What is feedback?
+
+The term feedback is often used to describe all kinds of comments made after the fact, including advice, praise, and evaluation. But none of these types of comments are considered feedback when we look at how research defines the science of feedback. Hattie and Timperley (1) define feedback as "information provided by an agent (e.g., mentor, peer, book, parent, self, experience) regarding aspects of... performance or understanding. The main purpose of feedback" they argue, "is to reduce discrepancies between current understandings and performane and a goal".
+
+There are different types of feedback:
+
+-Evaluative feedback (assesses);
+-Prescriptive feedback (gives advice);
+-Descriptive feedback (describes authentic feedback);
+
+
