@@ -1,3 +1,5 @@
+Comandos para criar o repositório pelo git
+
 …or create a new repository on the command line
 
 echo "# Estudos" >> README.md
@@ -10,3 +12,12 @@ git push -u origin master
 
 git remote add origin https://github.com/goncasthiago/Estudos.git
 git push -u origin master
+
+GIT PUSH
+
+envia os documentos contidos nos commits locais para o repositório remoto e todo o histórico de  commits
+
+GIT PULL
+
+Faz o download dos arquivos e das alterações presentes no repositorio remoto que não estão atualizadas no repositório local.
+
