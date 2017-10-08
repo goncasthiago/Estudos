@@ -1,12 +1,12 @@
-# git init
+…or create a new repository on the command line
 
-Inicia um repositorio, cria a pasta .git/, pasta essa utilizada pelo git para gerar o versionamento dos arquivos
+echo "# Estudos" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/goncasthiago/Estudos.git
+git push -u origin master
+…or push an existing repository from the command line
 
-# git add
-
-Comando utilizado para incluir arquivos no controle do git, escreve git add e depois o nome do arquivos
-
-# git status
-
-Mostra como está o status do git, quais os arquivos que ele está controlando a versao e quais arquivos não
-
+git remote add origin https://github.com/goncasthiago/Estudos.git
+git push -u origin master

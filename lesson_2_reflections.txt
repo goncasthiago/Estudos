@@ -1,0 +1,21 @@
+Como você pode usar a área de preparação para garantir que tenha um commit por alteração lógica?
+
+Mesmo que vários arquivos estejam alterados é possivel adicionar a staging area apenas o que queremos colocar no proximo commit de acordo com o assunto tratado, e depois colocar outros arquivos modificados na staging area até que todas as alteracoes e versoes dos arquivos sejam "salvas" pelos commits.
+
+Quais são algumas das situações em que branches seriam úteis para manter seu histórico organizado? Como branches ajudariam?
+
+Branches são alterações no sistemas que não mudam a sua funcionalidade como um todos mas o modo como o mesmo é utilizado, uma outra linguagem, uma nova dificuldade num jogo, um novo design, algo que pode ser um teste ou mesmo um novo modelo sem perder o modelo antigo, ou melhor, uma melhoria 
+
+git log --graph --oneline master coins easy-mode
+
+Como os diagramas ajudam a visualizar a estrutura de branches?
+
+Os diagramas ajudam a visualizar onde cada branch foi criado e quais as features que eles possuem e nao possuem de acordo com os commits feitos nos diferentes branches
+
+
+git config --global core.autocrlf true
+para enter do mac e do windows ficarem compativeis
+
+Qual é o resultado da mesclagem de dois branches? Por que o representamos no diagrama dessa forma?
+
+O resultado da mesclagem de dois branches é a incorporação da implementação de uma solução na solução da produção.
