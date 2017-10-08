@@ -1,0 +1,4 @@
+Quando gostaria de usar um repositório remoto em vez de manter o trabalho local?
+
+Com um repositório remoto é possivel compartilhar o trabalho e possibilita assim que várias pessoas trabalhem em conjunto no mesmo projeto
+
