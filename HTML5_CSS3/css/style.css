@@ -1,0 +1,26 @@
+body {
+	background: rgb(255, 220, 220);
+}
+body {
+	margin-left: 200px;
+	margin-right: 200px;
+	text-align: justify;
+}
+
+header {
+	margin-top: 70px;
+}
+
+.img_padrao {
+	margin-bottom: 20px;
+	width: 300px;
+}
+.img_logo {
+	margin-bottom: 0px;
+	width: 30px;
+}
+
+h1,
+h2 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
