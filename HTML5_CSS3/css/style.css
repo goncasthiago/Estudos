@@ -1,9 +1,4 @@
 body {
-	background: rgb(255, 220, 220);
-}
-body {
-	margin-left: 200px;
-	margin-right: 200px;
 	text-align: justify;
 }
 
@@ -14,6 +9,12 @@ header {
 .img_padrao {
 	margin-bottom: 20px;
 	width: 300px;
+	height: 300px;
+}
+
+.img_parceiros {
+	height: 150px;
+	object-fit: cover;
 }
 .img_logo {
 	margin-bottom: 0px;
@@ -23,4 +24,26 @@ header {
 h1,
 h2 {
 	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.servicos {
+	background-color: aquamarine;
+}
+.margin {
+	padding-bottom: 50px;
+	margin-top: 10px;
+}
+
+.parceiros,
+.contato {
+	background-color: aquamarine;
+}
+.logo {
+	height: 90px;
+	vertical-align: middle;
+}
+
+.bg-footer {
+	background-color: darkslategrey;
+	color: lightcyan;
+	padding: 50px;
 }
