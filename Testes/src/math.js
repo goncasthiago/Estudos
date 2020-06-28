@@ -7,7 +7,8 @@ class Math{
     multiply(a,b){
         return a * b;
     }
-    print(req, res, a, b){
+
+    printSum(req, res, a, b){
         res.load('index', a + b)
     }
 }
