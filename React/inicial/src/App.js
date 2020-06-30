@@ -3,6 +3,24 @@ import './App.css';
 import Button from '../src/Button';
 import AppNew from './AppNew';
 
+const customerid = [
+	{
+		id: 1,
+		name: 'Thiago Debia',
+		idade: 36
+	},
+	{
+		id: 2,
+		name: 'Juliana Cassia',
+		idade: 36
+	},
+	{
+		id: 3,
+		name: 'Arthur Gonçalves',
+		idade: 6
+	}
+];
+
 function primeiroJSX() {
 	return (
 		<div>
@@ -26,7 +44,7 @@ const hasCustomer = true;
 
 function App() {
 	//Bloco de renderização dos componentes
-	const renderHistory = () => (
+	const renderHistory = (
 		<div>
 			<p>Clique no Botão abaixo para visualizar o histórico dos clientes</p>
 			<br />
@@ -34,7 +52,7 @@ function App() {
 		</div>
 	);
 
-	const renderAddCustomer = () => (
+	const renderAddCustomer = (
 		<div>
 			<p>Clique abaixo para cadastrar o cliente</p>
 			<br />
@@ -54,13 +72,25 @@ function App() {
 		);
 	};
 
+	const renderCustomers = (customer) => {
+		return (
+			<div key={`customer-${customer.id}`}>
+				<li>{customer.name}</li>
+				Idade: {customer.idade}
+			</div>
+		);
+	};
+
 	return (
 		<div className="App">
 			<header className="App-header">
 				<p>Digital Innovation One</p>
 				<p>Bem Vindo</p>
-				{hasCustomer ? renderHistory() : renderAddCustomer()}
+				{hasCustomer ? renderHistory : renderAddCustomer}
 				<div>{showCustomer()}</div>
+				<div>
+					<ul>{customerid.map(renderCustomers)}</ul>
+				</div>
 			</header>
 		</div>
 	);
