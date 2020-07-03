@@ -1,0 +1,7 @@
+python -m venv .\.virtualenvs\portal #cria o ambiente virtual
+.\.virtualenvs\portal\Scripts\activate #entra no ambiente virtual
+pip install django #instala o pacote django
+##################################################################
+django-admin startproject portal #Criando o projeto django
+django-admin startapp meu_app #criando o app
+python manage.py runserver #iniciando o servidor
