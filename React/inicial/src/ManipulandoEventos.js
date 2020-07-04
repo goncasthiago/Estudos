@@ -1,7 +1,4 @@
 import React from 'react';
-import './App.css';
-import Button from '../src/Button';
-import AppNew from './AppNew';
 
 const customerid = [
 	{
@@ -21,28 +18,27 @@ const customerid = [
 	}
 ];
 
-function primeiroJSX() {
-	return (
-		<div>
-			<p>Thiago Debia</p>
-			<p>Soma: {soma(5, 5)}</p>
-			<Button onClick={() => soma(5, 5)} name={'Soma'} />
-		</div>
-	);
-}
-
-function soma(a, b) {
-	console.log('clicou');
-	return a + b;
-}
-
 //criando botões html
 const buttonA = <button>Histórico dos Clientes</button>;
 const buttonB = <button>Cadastrar Cliente</button>;
 
 const hasCustomer = true;
 
-function App() {
+const App = () => {
+	const name = 'Digital Innovation';
+
+	const handleChange = (e) => {
+		const { value } = e.target;
+		console.log(value);
+	};
+
+	const showEvent = (e) => {
+		console.log(e);
+		alert(name);
+	};
+
+	const Button = <button onClick={showEvent}>Mostrar Evento</button>;
+
 	//Bloco de renderização dos componentes
 	const renderHistory = (
 		<div>
@@ -72,10 +68,16 @@ function App() {
 		);
 	};
 
-	const renderCustomers = (customer) => {
+	const handleDeleteCustomer = (e, id) => {
+		console.log(`Deletar o id: ${id}`);
+	};
+
+	const renderCustomers = (customer, index) => {
 		return (
 			<div key={`customer-${customer.id}`}>
-				<li>{customer.name}</li>
+				<li>
+					{customer.name} <button onClick={(e) => handleDeleteCustomer(e, customer.id)}>Delete</button>
+				</li>
 				Idade: {customer.idade}
 			</div>
 		);
@@ -92,43 +94,11 @@ function App() {
 					<ul>{customerid.map(renderCustomers)}</ul>
 				</div>
 			</header>
+
+			<p>Digital Innovation One</p>
+			<input onChange={handleChange} />
+			{Button}
 		</div>
 	);
-}
-
-/*
-
-Mostrando elementos de forma condicional
-
-{hasCustomer && (
-					<div>
-						<p>Clique no Botão abaixo para visualizar o histórico dos clientes</p>
-						<br />
-						{buttonA}
-					</div>
-				)}
-
-*/
-
-/*
-//Operador ternário para if else
-
-const renderHistory = () => (
-		<div>
-			<p>Clique no Botão abaixo para visualizar o histórico dos clientes</p>
-			<br />
-			{buttonA}
-		</div>
-	);
-
-	const renderAddCustomer = () => (
-		<div>
-			<p>Clique abaixo para cadastrar o cliente</p>
-			<br />
-			{buttonB}
-		</div>
-	);
-
-{hasCustomer ? renderHistory() : renderAddCustomer()}
-*/
+};
 export default App;
