@@ -75,9 +75,7 @@ const App = () => {
 	const renderCustomers = (customer, index) => {
 		return (
 			<div key={`customer-${customer.id}`}>
-				<li>
-					{customer.name} <button onClick={(e) => handleDeleteCustomer(e, customer.id)}>Delete</button>
-				</li>
+				<li>{customer.name}</li>
 				Idade: {customer.idade}
 			</div>
 		);
