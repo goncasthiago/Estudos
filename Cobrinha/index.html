@@ -7,14 +7,17 @@
     <title>Jogo da Cobrinha em JavaScript</title>
 </head>
 <body>
+    <div class="container jogo">
     <div class="container">
         <h1>Jogo da Cobrinha</h1>
-        <h2 class="fim">Placar</h2>
-        <p class="pontuacao">0</p>
+        <div class="row">
+            <h2 class="fim">Placar</h2>
+            <p class="pontuacao">0</p>
+        </div>
     </div>
 
-    <canvas id="snake" width="512" height="512"></canvas>
-
+    <canvas class="cobrinha" id="snake" width="512" height="512"></canvas>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 </html>

@@ -1,15 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.jogo {
+	border: 2px solid black;
+	margin-top: 18px;
+	border-radius: 18px;
+}
 body {
+	background-color: lightgoldenrodyellow;
 	display: flex;
 	align-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 .container {
+	background-color: white;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
+.row {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
 h1 {
+	padding: 8px;
 	color: darkgreen;
+}
+.cobrinha {
+	padding: 16px;
+}
+
+h2,
+p {
+	font-size: 1.5rem;
+	margin-left: 18px;
 }
